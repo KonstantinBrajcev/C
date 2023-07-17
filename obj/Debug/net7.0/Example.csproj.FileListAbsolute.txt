@@ -1,0 +1,15 @@
+D:\JS_Start\Example\bin\Debug\net7.0\Example.exe
+D:\JS_Start\Example\bin\Debug\net7.0\Example.deps.json
+D:\JS_Start\Example\bin\Debug\net7.0\Example.runtimeconfig.json
+D:\JS_Start\Example\bin\Debug\net7.0\Example.dll
+D:\JS_Start\Example\bin\Debug\net7.0\Example.pdb
+D:\JS_Start\Example\obj\Debug\net7.0\Example.csproj.AssemblyReference.cache
+D:\JS_Start\Example\obj\Debug\net7.0\Example.GeneratedMSBuildEditorConfig.editorconfig
+D:\JS_Start\Example\obj\Debug\net7.0\Example.AssemblyInfoInputs.cache
+D:\JS_Start\Example\obj\Debug\net7.0\Example.AssemblyInfo.cs
+D:\JS_Start\Example\obj\Debug\net7.0\Example.csproj.CoreCompileInputs.cache
+D:\JS_Start\Example\obj\Debug\net7.0\Example.dll
+D:\JS_Start\Example\obj\Debug\net7.0\refint\Example.dll
+D:\JS_Start\Example\obj\Debug\net7.0\Example.pdb
+D:\JS_Start\Example\obj\Debug\net7.0\Example.genruntimeconfig.cache
+D:\JS_Start\Example\obj\Debug\net7.0\ref\Example.dll
