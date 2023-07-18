@@ -4,11 +4,24 @@
 // Console.Write("Привет, ");
 // Console.Write(username);
 
-double numberA = new Random().Next(1, 10);
-Console.WriteLine(numberA);
-double numberB = new Random().Next(1, 10);
-Console.WriteLine(numberB);
-double result1 = numberA + numberB;
-Console.WriteLine(result1);
-double result2 = numberA / numberB;
-Console.WriteLine(result2);
+// double numberA = new Random().Next(1, 10);
+// Console.WriteLine(numberA);
+// double numberB = new Random().Next(1, 10);
+// Console.WriteLine(numberB);
+// double result1 = numberA + numberB;
+// Console.WriteLine(result1);
+// double result2 = numberA / numberB;
+// Console.WriteLine(result2);
+
+
+Console.Write("Введите имя пользователя: ");
+string username = Console.ReadLine();
+if (username=="Маша")
+{
+Console.WriteLine("Ура это же МАША!");
+}
+else
+{
+Console.WriteLine("Привет, ");
+Console.WriteLine(username);
+}
