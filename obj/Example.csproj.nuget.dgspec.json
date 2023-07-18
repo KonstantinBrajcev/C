@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\JS_Start\\Example\\Example.csproj": {}
+    "D:\\My_program\\C\\Example.csproj": {}
   },
   "projects": {
-    "D:\\JS_Start\\Example\\Example.csproj": {
+    "D:\\My_program\\C\\Example.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\JS_Start\\Example\\Example.csproj",
+        "projectUniqueName": "D:\\My_program\\C\\Example.csproj",
         "projectName": "Example",
-        "projectPath": "D:\\JS_Start\\Example\\Example.csproj",
+        "projectPath": "D:\\My_program\\C\\Example.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\JS_Start\\Example\\obj\\",
+        "outputPath": "D:\\My_program\\C\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"

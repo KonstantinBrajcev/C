@@ -4,9 +4,11 @@
 // Console.Write("Привет, ");
 // Console.Write(username);
 
-double numberA = 31;
-double numberВ = 5;
-double result1 = numberA + numberВ;
+double numberA = new Random().Next(1, 10);
+Console.WriteLine(numberA);
+double numberB = new Random().Next(1, 10);
+Console.WriteLine(numberB);
+double result1 = numberA + numberB;
 Console.WriteLine(result1);
-double result2 = numberA / numberВ;
+double result2 = numberA / numberB;
 Console.WriteLine(result2);
