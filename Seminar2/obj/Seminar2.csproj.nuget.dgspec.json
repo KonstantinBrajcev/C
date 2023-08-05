@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\My_program\\C\\C.csproj": {}
+    "D:\\My_program\\C\\Seminar2\\Seminar2.csproj": {}
   },
   "projects": {
-    "D:\\My_program\\C\\C.csproj": {
+    "D:\\My_program\\C\\Seminar2\\Seminar2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My_program\\C\\C.csproj",
-        "projectName": "C",
-        "projectPath": "D:\\My_program\\C\\C.csproj",
+        "projectUniqueName": "D:\\My_program\\C\\Seminar2\\Seminar2.csproj",
+        "projectName": "Seminar2",
+        "projectPath": "D:\\My_program\\C\\Seminar2\\Seminar2.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\My_program\\C\\obj\\",
+        "outputPath": "D:\\My_program\\C\\Seminar2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
