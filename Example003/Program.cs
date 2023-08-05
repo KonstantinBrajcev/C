@@ -12,6 +12,7 @@
 // double result2 = numberA / numberB;
 // Console.WriteLine(result2);
 
+using System;
 
 Console.Write("Введите имя пользователя: ");
 string username = Console.ReadLine();
