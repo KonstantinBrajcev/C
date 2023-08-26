@@ -1,0 +1,14 @@
+D:\My_program\C\HomeWork5\bin\Debug\net7.0\HomeWork5.exe
+D:\My_program\C\HomeWork5\bin\Debug\net7.0\HomeWork5.deps.json
+D:\My_program\C\HomeWork5\bin\Debug\net7.0\HomeWork5.runtimeconfig.json
+D:\My_program\C\HomeWork5\bin\Debug\net7.0\HomeWork5.dll
+D:\My_program\C\HomeWork5\bin\Debug\net7.0\HomeWork5.pdb
+D:\My_program\C\HomeWork5\obj\Debug\net7.0\HomeWork5.GeneratedMSBuildEditorConfig.editorconfig
+D:\My_program\C\HomeWork5\obj\Debug\net7.0\HomeWork5.AssemblyInfoInputs.cache
+D:\My_program\C\HomeWork5\obj\Debug\net7.0\HomeWork5.AssemblyInfo.cs
+D:\My_program\C\HomeWork5\obj\Debug\net7.0\HomeWork5.csproj.CoreCompileInputs.cache
+D:\My_program\C\HomeWork5\obj\Debug\net7.0\HomeWork5.dll
+D:\My_program\C\HomeWork5\obj\Debug\net7.0\refint\HomeWork5.dll
+D:\My_program\C\HomeWork5\obj\Debug\net7.0\HomeWork5.pdb
+D:\My_program\C\HomeWork5\obj\Debug\net7.0\HomeWork5.genruntimeconfig.cache
+D:\My_program\C\HomeWork5\obj\Debug\net7.0\ref\HomeWork5.dll
