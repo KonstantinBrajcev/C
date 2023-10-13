@@ -68,7 +68,6 @@ void Print(int[,] array)
 }
 */
 
-
 // Задача 56: Задайте прямоугольный двумерный массив. Напишите программу,
 // которая будет находить строку с наименьшей суммой элементов.
 // Например, задан массив:
@@ -116,7 +115,7 @@ int[,] CreatArrray(int m, int n)
 // 18 20
 // 15 18
 /*
-int m = Insert("Введите размер (Ш х В) матриц : ");
+int m = Insert("Введите количество элементов строки матриц : ");
 int Insert(string message)
 {
     Console.Write(message);
@@ -170,7 +169,6 @@ void Print(int[,] array)
 }
 */
 
-
 // Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу,
 // которая будет построчно выводить массив, добавляя индексы каждого элемента.
 // Массив размером 2 x 2 x 2
@@ -178,9 +176,32 @@ void Print(int[,] array)
 // 34(1, 0, 0) 41(1, 1, 0)
 // 27(0, 0, 1) 90(0, 1, 1)
 // 26(1, 0, 1) 55(1, 1, 1)
-
-
-
+/*
+int m = Insert("Введите количество элементов строки матрицы : ");
+int Insert(string message)
+{
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
+}
+Console.WriteLine("===трехмерный массив===");
+CreatArray(m);
+void CreatArray(int m)
+{
+    int[,,] array3d = new int[m, m, m];
+    for (int i = 0; i < m; i++) //Вводим Рандомные числа в массив и считаем четные числа
+    {
+        for (int j = 0; j < m; j++)
+        {
+            for (int k = 0; k < m; k++)
+            {
+                array3d[i, j, k] = new Random().Next(1, 10);//генератор рандомных чисел
+                Console.Write($"[{i}:{j}:{k}] - {array3d[i, j, k]} \t");//вывод элементов
+            }
+            Console.WriteLine();
+        }
+    }
+}
+*/
 
 // Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
 // Например, на выходе получается вот такой массив:
@@ -188,3 +209,41 @@ void Print(int[,] array)
 // 12 13 14 05
 // 11 16 15 06
 // 10 09 08 07
+/*
+int n = Insert("Введите количество элементов строки : ");
+int Insert(string message)
+{
+    Console.Write(message);
+    int number = Convert.ToInt32(Console.ReadLine());
+    return number;
+}
+int[,] array = CreatArray(n);
+int[,] CreatArray(int n)
+{
+    int num = 1; // начальное значение элемента массива
+    int[,] arr = new int[n, n]; // создание массива
+    for (int k = 0; k < n / 2; k++)  //цикл заполнения массива
+    {
+        for (int i = k; i < n - k - 1; i++)//влево
+        { arr[k, i] = num++; }
+        for (int i = k; i < n - k - 1; i++)//вниз
+        { arr[i, n - k - 1] = num++; }
+        for (int i = n - k - 1; i > k; i--)//вправо
+        { arr[n - k - 1, i] = num++; }
+        for (int i = n - k - 1; i > k; i--)//вверх
+        { arr[i, k] = num++; }
+    }
+    return arr;
+}
+Print(array);
+void Print(int[,] array)
+{
+    Console.WriteLine("===Спиральный массив===");
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        { Console.Write($" {array[i, j]} \t"); }
+        Console.WriteLine();
+    }
+}
+*/

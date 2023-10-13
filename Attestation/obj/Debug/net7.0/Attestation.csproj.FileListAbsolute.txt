@@ -1,0 +1,14 @@
+D:\My_program\C\Attestation\bin\Debug\net7.0\Attestation.exe
+D:\My_program\C\Attestation\bin\Debug\net7.0\Attestation.deps.json
+D:\My_program\C\Attestation\bin\Debug\net7.0\Attestation.runtimeconfig.json
+D:\My_program\C\Attestation\bin\Debug\net7.0\Attestation.dll
+D:\My_program\C\Attestation\bin\Debug\net7.0\Attestation.pdb
+D:\My_program\C\Attestation\obj\Debug\net7.0\Attestation.GeneratedMSBuildEditorConfig.editorconfig
+D:\My_program\C\Attestation\obj\Debug\net7.0\Attestation.AssemblyInfoInputs.cache
+D:\My_program\C\Attestation\obj\Debug\net7.0\Attestation.AssemblyInfo.cs
+D:\My_program\C\Attestation\obj\Debug\net7.0\Attestation.csproj.CoreCompileInputs.cache
+D:\My_program\C\Attestation\obj\Debug\net7.0\Attestation.dll
+D:\My_program\C\Attestation\obj\Debug\net7.0\refint\Attestation.dll
+D:\My_program\C\Attestation\obj\Debug\net7.0\Attestation.pdb
+D:\My_program\C\Attestation\obj\Debug\net7.0\Attestation.genruntimeconfig.cache
+D:\My_program\C\Attestation\obj\Debug\net7.0\ref\Attestation.dll
