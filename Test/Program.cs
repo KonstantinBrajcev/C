@@ -1,39 +1,79 @@
-﻿class Product :
-    def __init__(self, name, owner):
-        self.name = name
-        self.owner = owner
-        self.users = []
+﻿using System;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading.Tasks;
+using Accord.IO;
+using Accord.MachineLearning;
+using Accord.MachineLearning.VectorMachines;
+using Accord.MachineLearning.VectorMachines.Learning;
+using Accord.Math.Optimization.Losses;
+using Accord.Statistics.Filters;
 
-    def add_user(self, user):
-        self.users.append(user)
+class Program
+{
+    static void Main()
+    {
+        // Загрузка данных для обучения из файла train.txt
+        var trainData = new StreamReader("train.txt");
+        var X_train = new List<string>();
+        var Y_train = new List<string>();
+        string line;
+        while ((line = trainData.ReadLine()) != null)
+        {
+            var parts = line.Split('\t');
+            X_train.Add(parts[0]);
+            Y_train.Add(parts[1]);
+        }
+        trainData.Close();
 
-    def remove_user(self, user):
-        self.users.remove(user)
+        // Преобразование текстовых признаков в числовые с помощью TF-IDF
+        var vectorizer = new TfidfVectorizer();
+        var X_train_transformed = vectorizer.FitTransform(X_train.ToArray());
 
-class Lesson :
-    def __init__(self, name, video_link, duration):
-        self.name = name
-        self.video_link = video_link
-        self.duration = duration
-        self.products = []
+        // Преобразование меток в числовой формат
+        var labelEncoder = new LabelEncoder();
+        var Y_train_transformed = labelEncoder.FitTransform(Y_train.ToArray());
 
-    def add_product(self, product):
-        self.products.append(product)
+        // Нормализация признаков
+        var scaler = new MaxAbsScaler();
+        var X_train_normalized = scaler.FitTransform(X_train_transformed);
 
-    def remove_product(self, product):
-        self.products.remove(product)
+        // Обучение модели логистической регрессии
+        var teacher = new LogisticRegressionTeacher();
+        var model = teacher.Learn(X_train_normalized, Y_train_transformed);
 
-class UserLesson :
-    def __init__(self, user, lesson):
-        self.user = user
-        self.lesson = lesson
-        self.view_time = 0
-        self.status = "Не просмотрено"
+        // Загрузка данных для вывода предсказаний из файла test.txt
+        var testData = new StreamReader("test.txt");
+        var X_test = new List<string>();
+        while ((line = testData.ReadLine()) != null)
+        {
+            X_test.Add(line);
+        }
+        testData.Close();
 
-    def update_view_time(self, time):
-        self.view_time = time
+        // Преобразование текстовых признаков в числовые с помощью TF-IDF
+        var X_test_transformed = vectorizer.Transform(X_test.ToArray());
 
-        if self.view_time >= self.lesson.duration * 0.8:
-            self.status = "Просмотрено"
-        else:
-            self.status = "Не просмотрено"
+        // Нормализация признаков
+        var X_test_normalized = scaler.Transform(X_test_transformed);
+
+        // Предсказание на тестовых данных
+        var Y_pred = model.Decide(X_test_normalized);
+
+        // Обратное преобразование числовых меток в исходный формат
+        var predicted_labels = labelEncoder.InverseTransform(Y_pred);
+
+        // Сохранение предсказаний в файл output.txt
+        using (var outputFile = new StreamWriter("output.txt"))
+        {
+            foreach (var label in predicted_labels)
+            {
+                outputFile.WriteLine(label);
+            }
+        }
+
+        Console.WriteLine("Прогнозы сохранены в output.txt.");
+    }
+}
